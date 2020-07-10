@@ -1,342 +1,341 @@
+ 
 
-  /*  assignment 1a--signUp form*/
+ * {
+	font-family: open sans, sans-serif;
+}
 
-  * {
-		font-family: open sans, sans-serif;
-	}
+.email,
+.password,
+.name,
+button.getStarted,
+div.getStarted {
+	width: 380px;
+}
 
-	.email,
-	.password,
-	.name,
-	button.getStarted,
-	div.getStarted {
-		width: 380px;
-	}
+.input-error{
+	border-color: red;
+}
+.email,
+.password,
+.name,
+button.getStarted,
+div button.getStarted,
+div.getStarted {
+	margin: 15px auto;
+	clear: both;
+}
 
-	.email,
-	.password,
-	.name,
-	button.getStarted,
-	div button.getStarted,
-	div.getStarted {
-		margin: 15px auto;
-		clear: both;
-	}
+.email input,
+.password input {
+	width: 375px;
+	padding: 3px 0px 4px 3px;
+}
 
-	.email input,
-	.password input {
-		width: 375px;
-		padding: 3px 0px 4px 3px;
-	}
-	
-	.firstName input,
-	.lastName input {
-		text-transform: capitalize;
-	}
+.firstName input,
+.lastName input {
+	text-transform: capitalize;
+}
 
-	button {
-		border: none;
-	}
-	button.logIn {
-		background-color: rgb(67, 82, 89);
-		color: #fff;
-		float: right;
-	}
+button {
+	border: none;
+}
+button.logIn {
+	background-color: rgb(67, 82, 89);
+	color: #fff;
+	float: right;
+}
 
-	button.logIn:active {
-		background-color: rgba(67, 82, 89, 0.5);
-	}
+button.logIn:active {
+	background-color: rgba(67, 82, 89, 0.5);
+}
 
-	.signUp,
-	button.getStarted {
-		background-color: rgb(42, 176, 137);
-		color: #fff;
-	}
+.signUp,
+button.getStarted {
+	background-color: rgb(42, 176, 137);
+	color: #fff;
+}
 
-	button.getStarted {
-		font-size: 30px;
-		font-weight: bold;
-		height: 50px;
-	}
+button.getStarted {
+	font-size: 30px;
+	font-weight: bold;
+	height: 50px;
+}
 
-	button.getStarted:active,
-	.topButtons .signUp:active {
-		background-color: rgba(50, 205, 161, 0.5);
-	}
+button.getStarted:active,
+.topButtons .signUp:active {
+	background-color: rgba(50, 205, 161, 0.5);
+}
 
-	.topButtons {
-		margin: 0 auto;
-		padding: 10px;
-	}
+.topButtons {
+	margin: 0 auto;
+	padding: 10px;
+}
 
-	.topButtons button {
-		width: 190px;
-		height: 40px;
-		font-size: 14px;
-		margin: 0 auto;
-	}
+.topButtons button {
+	width: 190px;
+	height: 40px;
+	font-size: 14px;
+	margin: 0 auto;
+}
 
-	
-	.mainDiv {
-		background-color: rgb(36, 50, 60);
-	}
 
-	
-	label,
-	::placeholder {
-		color: rgb(83, 96, 105);
-		font-size: 12px;
-	}
+.mainDiv {
+	background-color: rgb(36, 50, 60);
+}
 
-	.mainDiv {
-		width: 400px;
-		height: 100%;
-		padding: 10px;
-		margin: 30px auto;
-	}
 
-	h3 {
-		text-align: center;
-		color: #fff;
-		margin-bottom: 0;
-		margin-top: 15px;
-	}
+label,
+::placeholder {
+	color: rgb(83, 96, 105);
+	font-size: 12px;
+}
 
-	.name .firstName {
-		float: left;
-		margin: 15px auto;
-		position: relative;
-	}
+.mainDiv {
+	width: 400px;
+	height: 100%;
+	padding: 10px;
+	margin: 30px auto;
+}
 
-	.password {
-		position: relative;
-	}
+h3 {
+	text-align: center;
+	color: #fff;
+	margin-bottom: 0;
+	margin-top: 15px;
+}
 
-	.name .lastName {
-		float: right;
-		margin: 15px auto;
-	}
+.name .firstName {
+	float: left;
+	margin: 15px auto;
+	position: relative;
+}
 
-	.name input {
-		width: 180px;
-		padding: 3px 0px 4px 3px;
-	}
+.password {
+	position: relative;
+}
 
-	.input-icons {
-		width: 100%;
-		margin-bottom: 10px;
-	}
+.name .lastName {
+	float: right;
+	margin: 15px auto;
+}
 
-	.icon {
-		padding: 10px;
-		color: green;
-		min-width: 50px;
-		text-align: center;
-	}
+.name input {
+	width: 180px;
+	padding: 3px 0px 4px 3px;
+}
 
-	.input-field {
-		width: 100%;
-		padding: 10px;
-	}
+.input-icons {
+	width: 100%;
+	margin-bottom: 10px;
+}
 
-	.nameIcon {
-		position: absolute;
-		left: 75%;
-		width: 5px;
-		height: 5px;
-		top: -32%;
-	}
+.icon {
+	padding: 10px;
+	color: green;
+	min-width: 50px;
+	text-align: center;
+}
 
-	.passIcon {
-		position: absolute;
-		left: 87.5%;
-		width: 5px;
-		height: 5px;
-		top: -28.5%;
-  }
-  
-/*  assignment 1 partb */
+.input-field {
+	width: 100%;
+	padding: 10px;
+}
+
+.nameIcon {
+	position: absolute;
+	left: 75%;
+	width: 5px;
+	height: 5px;
+	top: -32%;
+}
+
+.passIcon {
+	position: absolute;
+	left: 87.5%;
+	width: 5px;
+	height: 5px;
+	top: -28.5%;
+}
+
+
+
 
 body {
-  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-  color: #424242;
+font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+color: #424242;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: auto;
-  height: 90vh;
-  justify-content: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: auto;
+height: 90vh;
+justify-content: center;
 }
 
 header {
-	background: #424242;
-  text-align: center;
-  border-radius: 3px;
-  width: 250px;
-  height: 3em;
-  padding-top: .5em;
-  margin-bottom: 1em;
-  position: relative;
+background: #424242;
+text-align: center;
+border-radius: 3px;
+width: 250px;
+height: 3em;
+padding-top: .5em;
+margin-bottom: 1em;
+position: relative;
 }
 
 h1 {
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-  color: #FFFFFF;
-  font-size: .77em;
-	font-weight: lighter !important;
+font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+color: #FFFFFF;
+font-size: .77em;
+font-weight: lighter !important;
 }
 
 
 header::after {
-	content: '';
-    position: absolute;
-    border: 6px solid transparent;
-	border-top-color: #424242;
-	border-bottom: 0;
-    bottom: 0;
-    width: 0;
-	height: 0;
-	left: 85%;	
-	margin-left: -6px;
-	margin-bottom: -6px;
+content: '';
+position: absolute;
+border: 6px solid transparent;
+border-top-color: #424242;
+border-bottom: 0;
+bottom: 0;
+width: 0;
+height: 0;
+left: 85%;	
+margin-left: -6px;
+margin-bottom: -6px;
 }
 
 .progress-bar {
-  border-style: solid;
-  border-width: 1px 1px 0 1px;
-  flex-direction: column;
-  height: 10px;
-  border-color: #eaeaea;
-  margin-top: -7px;
-  width: 250px;
-  display: flex; 
-  background-color: #f8f8f8;
-	
+border-style: solid;
+border-width: 1px 1px 0 1px;
+flex-direction: column;
+height: 10px;
+border-color: #eaeaea;
+margin-top: -7px;
+width: 250px;
+display: flex; 
+background-color: #f8f8f8;
+
 }
 
 .progress-bar > div {
-  background-color: #EF5F3C;
-  height: 10px;
-  width: 75%;
+background-color: #EF5F3C;
+height: 10px;
+width: 75%;
 }
 
 .main {
-  padding-right: .5em;
-  padding-left: 1.5em;
-  text-align: left;
-  font-size: .75em;
-  width: 250px;
-  color: #777;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #eaeaea;
-  display: flex;
-  flex-direction: column;
-  box-shadow:0 1px 1px #eaeaea;
+padding-right: .5em;
+padding-left: 1.5em;
+text-align: left;
+font-size: .75em;
+width: 250px;
+color: #777;
+border-style: solid;
+border-width: 1px;
+border-color: #eaeaea;
+display: flex;
+flex-direction: column;
+box-shadow:0 1px 1px #eaeaea;
 }
 
 a {
-  font-style: italic;
-  color: #20A1D4;
-  font-size: 1em;
-  text-decoration: none;
+font-style: italic;
+color: #20A1D4;
+font-size: 1em;
+text-decoration: none;
 }
 
 
 .dollar-sign {
-  position: relative;
-  display: inline;
+position: relative;
+display: inline;
 }
 
 
 .dollar-sign:before {
-  color: #C0C0C0;
-  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-  font-weight: bold;
-  content: '$';
-  position: absolute;
-  top: 0;
-  left: 10px;
-  z-index: 1;
+color: #8d7f7f;
+font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+font-weight: bold;
+content: '$';
+position: absolute;
+top: -6px;
+left: 10px;
+font-size: 16px;
+z-index: 1;
 }
 
 .dollar-amount {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #eaeaea;
-  border-radius: 3px;
-  width: 45%;
-  margin: 0 5px 10px 0;
-  padding: 12px 20px 12px 20px;
+border-style: solid;
+border-width: 1px;
+border-color: #eaeaea;
+border-radius: 3px;
+width: 45%;
+margin: 0 5px 10px 0;
+padding: 12px 20px 12px 20px;
 }
 
 .dollar-amount::placeholder {
-	color: #424242;
-	font-weight: bold;
-	font-size: 1.2em;
+color: #424242;
+font-weight: bold;
+font-size: 1.2em;
 }
+
 .submit {
-  background-color: #1CBC2C;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #1CBC2C;
-  border-radius: 3px;
-  color: #FFFFFF;
-	font-size: 1.2em;
-  width: 45%;
-  margin: 0 0 0 5px;
-  padding: 10px 10px 10px 10px;
+background-color: #1CBC2C;
+border-style: solid;
+border-width: 1px;
+border-color: #1CBC2C;
+border-radius: 3px;
+color: #FFFFFF;
+font-size: 1.2em;
+width: 45%;
+margin: 0 0 0 5px;
+padding: 10px 10px 10px 10px;
 }
 
 button {
-  background-color: #f8f8f8;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #eaeaea;
-  border-radius: 3px;
-  color: #777;
-  font-weight: bold;
-  font-size: .7em;
-  box-shadow:0 1px 1px #eaeaea;
+background-color: #f8f8f8;
+border-style: solid;
+border-width: 1px;
+border-color: #eaeaea;
+border-radius: 3px;
+color: #777;
+font-weight: bold;
+font-size: .7em;
+box-shadow:0 1px 1px #eaeaea;
 }
 
 footer {
-  padding: 10px 0 0 0;
-  width: 250px;
+padding: 10px 0 0 0;
+width: 250px;
 
 }
 
-.footer-button-1 {
-	width: 117px;
-  height: 30px;
-	margin: 0 8px 0 0;
-}
+.footer-button {
+width: 117px;
+height: 30px;
 
-.footer-button-2 {
-	width: 117px;
-  height: 30px;
 }
 
 
-/*  assignment 2 Dynamic buttons*/
 
 .btnClass{
-  width: 100px;
-  height: 50px;
-  background: #4468df;
-  margin: 10px;
-  color:black;
-  border-radius: 5px;
-  border: none;
+width: 100px;
+height: 50px;
+background: #4468df;
+margin: 10px;
+color:black;
+border-radius: 5px;
+border: none;
 }
 
 .popup {
-  position:absolute;
-  top:40%;
-  left:20%;
-  background-color:yellow;
-  border-style: solid;
+position:absolute;
+top:40%;
+left:20%;
+background-color:yellow;
+border-style: solid;
 }
