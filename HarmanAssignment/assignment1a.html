@@ -1,13 +1,16 @@
-  <!DOCTYPE html>
-  <html>
+<!DOCTYPE html>
+<html>
+<html lang="en">
 
-  <head>
-    <link rel="stylesheet" href="styles/style.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/style.css">
 
-  <body>
+</head>
 
-
+<body>
   <div class="mainDiv">
     <div class="topButtons">
       <button class="signUp">Sign Up</button>
@@ -17,22 +20,22 @@
     <h3>Sign Up for Free</h3>
 
     <div class="name">
-      <div class="firstName">
-        <input type="text" class="input-field" name="firstName" value="" placeholder="First Name*" required>
+      <div class="firstName" >
+        <input type="text" class="input-field input-error" name="firstName" value="" placeholder="First Name*" required>
         <i class="fa fa-user icon nameIcon">
         </i>
       </div>
       <div class="lastName">
-        <input type="text" name="lastName" value="" placeholder="Last Name*" required>
+        <input type="text" name="lastName" class="input-error" value="" placeholder="Last Name*" required>
       </div>
     </div>
 
     <div class="email">
-      <input type="email" name="emailAdress" value="" placeholder="Email Address*" required>
+      <input type="email" name="emailAdress" class="input-error" value="" placeholder="Email Address*" required>
     </div>
 
     <div class="password">
-      <input type="password" class="input-field" name="password" value="" placeholder="Set A Password*" required>
+      <input type="password" class="input-field input-error" name="password" value="" placeholder="Set A Password*" required>
       <i class="fa fa-key icon passIcon">
       </i>
     </div>
