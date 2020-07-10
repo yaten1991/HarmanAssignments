@@ -1,5 +1,6 @@
 const buttonString = 'Button';
 const duration = 2000;
+let buttonCount;
 
 const setAttributes = (el, attrs) =>{
   Object.entries(attrs)
@@ -8,9 +9,9 @@ const setAttributes = (el, attrs) =>{
       el.onclick = tempAlert;
 }
 
-    buttonUIExecute = () =>{
+    buttonUIExecute = (btnNumber) =>{
       let div = document.getElementById("btnView");
-      let buttonCount = 5;
+      buttonCount = btnNumber || 5;
       let attrs = {'class': 'btnClass', 'type': 'button', 'value': '', 'id': ''};
       for (let i=1; i <= buttonCount; i++) {
         let button = document.createElement("input");
@@ -25,7 +26,7 @@ const setAttributes = (el, attrs) =>{
       console.log('clicked ', event);
       var el = document.createElement("div");
       el.setAttribute('class', 'popup');
-      el.innerHTML = 'Button name: '+ event.srcElement.value + ' Index: ' +  event.srcElement.id;
+      el.innerHTML = typeof event === 'object' ? `Button name: ${event.srcElement.value} Index: ${event.srcElement.id}` : event; 
       setTimeout(() => {
         el.parentNode.removeChild(el);
       }, duration);
