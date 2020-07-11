@@ -1,5 +1,5 @@
 const buttonString = 'Button';
-const duration = 2000;
+const duration = 4000;
 let buttonCount;
 
 const setAttributes = (el, attrs) =>{
