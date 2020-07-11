@@ -13,24 +13,30 @@
       box-sizing: border-box;
     }
   </style>
+
 </head>
 
 <body>
+  <h2>Donote for Cause</h2>
+  <br>
   <div class="container">
     <header class="give-now-header">
-      <h1><span style=font-weight:bold>$167</span> still needed for this project</h1>
+      <h1><span id="infoheader">$167</span> still needed for this project</h1>
     </header>
     <div class="progress-bar">
       <div></div>
     </div>
     <div class="main">
-      <p class=""><span style="color:#EF5F3C;font-weight:bold">Only 3 days left</span> to fund this project.</p>
-      <p>Join the <span style=font-weight:bold>42</span> other donors who have already supported this project.
-        Every
-        dollar helps.</p>
+      <p class="day-info">
+        <span id="imp-info">Only 3 days left</span> to fund this project.
+      </p>
+      <p class="day-info">Join the <span id="doInfo">42</span>
+        other donors who have already supported this project.
+        Every dollar helps.
+      </p>
       <form class="give-now">
         <div class="dollar-sign">
-          <input type="number" min="0" class="dollar-amount  " placeholder="50">
+          <input type="number" min="0" class="dollar-amount  " placeholder="">
         </div>
         <input class="submit" type="submit" value="Give Now">
       </form>
@@ -38,7 +44,7 @@
       <br>
     </div>
     <footer class="give-now-footer">
-      <button class="footer-button" style="margin: 0 8px 0 0;">Save for later</button>
+      <button class="footer-button-1">Save for later</button>
       <button class="footer-button">Tell your friends</button>
     </footer>
   </div>
